@@ -2,6 +2,24 @@
 
 from list_operations import *
 
+"""
+can only use Fundamental Operations On Lists
+Anything that you cant re-implement in Python is fundamental to the language. Fundamental list operations include:
+
+List indexing (some_list[index])
+
+List indexing assignment (some_list[index] = value)
+
+List slicing (some_list[start:end])
+
+List slicing assignment (some_list[start:end] = another_list)
+
+List index deletion (del some_list[index])
+
+List slicing deletion (del some_list[start:end])
+
+"""
+
 
 def custom_len(input_list):
     """Return number of items in the list.
@@ -48,7 +66,7 @@ def custom_append(input_list, value):
         True
 
     """
-    input_list = input_list + [value]
+    input_list[8:] = [value]
 
 def custom_extend(input_list, second_list):
     """Append every item in second_list to input_list.
@@ -66,7 +84,7 @@ def custom_extend(input_list, second_list):
 
     """
 
-    pass
+    input_list[4:] = second_list
 
 
 def custom_insert(input_list, index, value):
@@ -83,6 +101,9 @@ def custom_insert(input_list, index, value):
         True
 
     """
+
+    ### left off here ### 
+    # new_list = input_list[:index] + [value] + input_list[index+1]
 
     pass
 
