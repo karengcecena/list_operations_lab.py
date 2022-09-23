@@ -183,7 +183,7 @@ def delete_third_and_seventh(input_list):
     Input list must be modified in-place, not merely reassigned to a new value.
 
     For example:
-
+    
     >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
     >>> delete_third_and_seventh(notes)
     >>> notes
@@ -192,8 +192,8 @@ def delete_third_and_seventh(input_list):
     """
 
     input_list[2:3] = []
-    input_list[5:7] = []
-
+    input_list[5:6] = []
+   
 
 def delete_middle(input_list):
     """Remove all elements from input_list except the first two and last two.
